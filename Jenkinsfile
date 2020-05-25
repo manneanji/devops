@@ -2,7 +2,7 @@ pipeline{
   agent any
 
 tools {
-JDK 'java-mine'
+JDK 'java'
 Maven 'mvn-mine'
 }
 
