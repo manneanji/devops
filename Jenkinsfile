@@ -2,17 +2,17 @@ pipeline{
   agent any
 
 tools {
-java "java-mine"
-maven "mvn-mine"
+java 'java-mine'
+maven 'mvn-mine'
 }
 
 stages {
-stage{
+stage('git clone'){
    steps{
    git "https://github.com/manneanji/devops.git"
 }
 }
-stage{
+stage('maven package'){
 steps{
 sh "mvn package"
 }
@@ -22,3 +22,5 @@ sh "mvn package"
 
 
 }
+
+
