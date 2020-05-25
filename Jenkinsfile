@@ -3,7 +3,7 @@ pipeline{
 
 tools {
 java 'java'
-Maven 'mvn-mine'
+maven 'mvn'
 }
 
 stages {
