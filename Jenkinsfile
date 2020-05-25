@@ -2,8 +2,8 @@ pipeline{
   agent any
 
 tools {
-java 'java-mine'
-maven 'mvn-mine'
+JDK 'java-mine'
+Maven 'mvn-mine'
 }
 
 stages {
